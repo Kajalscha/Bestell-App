@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/standard.css">
+    <link rel="stylesheet" href="styles/assets.css">
+    <link rel="stylesheet" href="styles/basket.css">
+ 
+   
+    <script src="db.js" > </script>
+    <script src="template.js" ></script>
+    <script src="script.js"> </script>
+    
+</head >
+<body onload="init()" >
+
+  <main id="main_div" >  
+
+    <header>       
+              
+      <img class="logo" src="assets/icons/Logo.png" alt=""> 
+      <img class="burger-menue" src="assets/icons/speisekarte.png" alt="">
+
+    </header>
+
+    <div class="content-wrapper"> 
+
+              
+      <section class="content"> 
+
+        <img class="temple-img" src="assets/img/temple.jpg" alt="">
+
+        <div class="title-div" >
+              
+          <div class="evaluation">
+            <h1> Tamil Flavor </h1>
+            <h4> Bewertung (4.5 von 5 Sternen) </h4>
+          </div>
+
+          <div class="menue-div" >
+                 
+            <p class="menue-text1"> Hauptgerichte </p>
+            &nbsp; &nbsp; 
+            <p class="menue-text1"> Beilagen </p>
+
+          </div>
+
+          <img class="food-img" src="assets/img/food.jpg" alt="">
+
+
+          <div class="maindish-div">
+
+            <h2> Hauptgerichte </h2> 
+
+            <div id="menue"> 
+             
+            </div>
+
+          </div>
+                
+          
+        </div>
+
+      </section>
+
+          
+
+      <section class="basket-wrapper hide-mobile">
+
+        <div class="basket"> 
+
+          <h1>Warenkorb</h1>
+          <div class="line1"> </div>
+
+          <div id="basket_add">
+
+
+          </div>
+
+          <div class="line2"> </div>
+
+
+          <div class="menue-cost"> 
+
+            <span class="menue-cost-row"> 
+              <p>Zwischensumme </p> 
+              <p>  <span id="subtotal"> 0.00 </span> €</p>
+            </span>
+
+            <span class="menue-cost-row"> 
+              
+              <p>Lieferkosten </p>
+              <p>   <span id="delivery"> 5 </span> € </p>
+            </span>
+
+            <span class="menue-cost-row p-total">  
+              <p> Gesamt </p>
+              <p>   <span id="total" > 0.00 </span> €</p>
+            </span>
+
+
+          </div>
+
+          <div class="checkout-button-div">  
+          <button onclick="order()" class="checkout"> Bezahlen </button>
+          </div>
+
+         </div>
+
+      </section>
+
+
+    </div>
+      
+    <div class="delivery-overlay" id="overlay"> 
+
+      <div class="overlay-box">
+         <img onclick="closeOverlay()"  class="overlay-close" src="assets/icons/close.png" alt=""> 
+          
+          <div class="overlay-text">   
+            <p> Vielen Dank für Ihre Bestellung</p>
+            <p> Ihre Bestellung ist auf dem Weg</p>  
+          </div>
+      </div>
+      
+    </div>
+
+    <footer>
+              <a href="https://www.flaticon.com/de/kostenlose-icons/menu-burger" title="menü-burger Icons">Menü-burger Icons erstellt von SeyfDesigner - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/plus" title="plus icons">Plus icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/minus" title="minus icons">Minus icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/trash-can" title="trash can icons">Trash can icons created by Freepik - Flaticon</a>
+              <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a>
+    </footer>
+
+
+  </main>
+  
+</body>
+</html>
+
