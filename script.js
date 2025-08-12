@@ -5,7 +5,7 @@ function init(){
 }
 
 
-//shows menues on Webside
+
 function rendermenues(){     
     let menues = document.getElementById(`menue`);
     menues.innerHTML = "";
@@ -18,7 +18,7 @@ function rendermenues(){
 }
 
 
-//Adds Menue to the basket (onclick)
+
 function addMenue(){
     let basketcontent = document.getElementById(`basket_add`);
     basketcontent.innerHTML = "";
@@ -32,8 +32,7 @@ function addMenue(){
 }
 
 
-//Adds menue to the array Basket
-//ckecks if menue is already there == increases
+
 function addMenueToArrayBasket(indexMenues){
     let dish = menue[indexMenues];
 
@@ -116,5 +115,25 @@ function order() {
 function closeOverlay(){
     document.getElementById("overlay").style.display = "none";
 }
+
+
+function openBasket(){
+    const basket = document.getElementById("basket_div");
+    basket.classList.remove("hide-mobile");
+
+
+}
+
+
+function closeBasket(){
+    const basket = document.getElementById("basket_div");
+    basket.classList.add("hide-mobile");
+
+}
+   
+   
+  
+
+
     
 

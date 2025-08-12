@@ -25,6 +25,11 @@ header{
     padding-left: 5px;
 }
 
+.header-icons{
+    display: flex;
+    flex-direction: row;
+}
+
 .burger-menue{
     height: 50px;
     padding-top: 5px;
@@ -36,6 +41,10 @@ header{
 .burger-menue:hover{
     background-color: #a04d04;
 }
+
+.responsive-div {
+    display: none;
+  }
 
 .content-wrapper{
     display: flex;
@@ -127,6 +136,10 @@ header{
     padding-top: 100px;
 }
 
+.hide-close-button{
+    display: none;
+}
+
 .checkout{
     width: 200px;
     height: 50px;
@@ -186,7 +199,7 @@ header{
 footer{
     background-color: #ef8830 ;
     margin-bottom: 0px;
-    height: 80px;
+    height: 110px;
     padding: 16px;
     display: flex;
     flex-direction: column;

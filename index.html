@@ -22,7 +22,14 @@
     <header>       
               
       <img class="logo" src="assets/icons/Logo.png" alt=""> 
-      <img class="burger-menue" src="assets/icons/speisekarte.png" alt="">
+
+      <div class="header-icons">    
+        <img onclick="openBasket()" class="burger-menue responsive-div " src="assets/icons/tasche.png" alt="">
+        <img class="burger-menue" src="assets/icons/speisekarte.png" alt="">
+
+      </div>
+
+     
 
     </header>
 
@@ -32,6 +39,7 @@
       <section class="content"> 
 
         <img class="temple-img" src="assets/img/temple.jpg" alt="">
+        
 
         <div class="title-div" >
               
@@ -68,7 +76,7 @@
 
           
 
-      <section class="basket-wrapper hide-mobile">
+      <section class="basket-wrapper basket-wrapper2 hide-mobile" id="basket_div">
 
         <div class="basket"> 
 
@@ -108,6 +116,10 @@
           <button onclick="order()" class="checkout"> Bezahlen </button>
           </div>
 
+          <div class="checkout-button-div hide-close-button">  
+            <button onclick="closeBasket()" class="checkout"> Schliessen </button>
+          </div>
+
          </div>
 
       </section>
@@ -125,6 +137,10 @@
             <p> Ihre Bestellung ist auf dem Weg</p>  
           </div>
       </div>
+
+      <div id="overlay_basket">
+
+      </div>
       
     </div>
 
@@ -134,6 +150,7 @@
               <a href="https://www.flaticon.com/free-icons/minus" title="minus icons">Minus icons created by Freepik - Flaticon</a>
               <a href="https://www.flaticon.com/free-icons/trash-can" title="trash can icons">Trash can icons created by Freepik - Flaticon</a>
               <a href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Pixel perfect - Flaticon</a>
+              <a href="https://www.flaticon.com/de/kostenlose-icons/tasche" title="tasche Icons">Tasche Icons erstellt von HideMaru - Flaticon</a>
     </footer>
 
 
